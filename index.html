@@ -16,6 +16,46 @@ main{padding-top:82px}
   main{padding-top:83px}
   .chapter-title{padding-bottom:2px}
 }
+
+/* Readability: larger body copy and tap targets, especially on phones */
+.intro{font-size:17px;line-height:1.85}
+.intro strong{font-size:19px}
+.hero p:not(.ko){font-size:16px;line-height:1.8}
+.nav a{font-size:14px}
+.entry h3{font-size:clamp(20px,3vw,25px);line-height:1.55}
+.author{font-size:15px}
+dl{font-size:15px;line-height:1.75}
+.link-label{font-size:14px}
+.links a{font-size:14px;line-height:1.5;padding:10px 13px}
+.footnote{font-size:14px}
+@media(max-width:600px){
+ .intro{font-size:17px;line-height:1.85}
+ .intro strong{font-size:19px}
+ .hero p:not(.ko){font-size:16px}
+ .nav a{font-size:14px;padding:11px 14px}
+ .entry h3{font-size:21px}
+ .author{font-size:15px}
+ dl{font-size:16px;line-height:1.75}
+ .link-label{font-size:14px}
+ .links a{font-size:15px;padding:12px 13px}
+ .code{font-size:18px}
+ .footnote{font-size:14px}
+}
+
+/* Mobile reading size: content only, buttons unchanged */
+@media(max-width:600px){
+ .intro{font-size:19px;line-height:1.85}
+ .intro strong{font-size:21px}
+ .entry h3{font-size:23px;line-height:1.5;letter-spacing:-.025em}
+ .author{font-size:18px;line-height:1.65}
+ dl{font-size:19px;line-height:1.65;gap:4px}
+ dt{font-size:17px;margin-top:13px}
+ dd{font-size:19px;overflow-wrap:anywhere}
+ .links a{font-size:13px;padding:7px 12px}
+ .link-label{font-size:13px}
+ .nav a{font-size:12px;padding:9px 15px}
+ .footnote{font-size:17px;line-height:1.8}
+}
 </style><style>
 .links a.korean-resource{border-color:#aab3a7;background:#eef0e9}.links a.korean-resource:hover{background:var(--ink);color:var(--paper)}
 </style><style>
